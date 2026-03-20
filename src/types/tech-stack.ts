@@ -1,7 +1,5 @@
-export type TechProps = {
+export type TechStack = {
   icon: React.ReactNode;
   hoverColor?: string;
   label?: string;
-  width: string;
-  height: string;
-};
+}

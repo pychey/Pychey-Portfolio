@@ -1,4 +1,4 @@
-import { IconProps } from "@/types/icon";
+import { IconProps } from "@/types/icon-prop";
 
 const GithubIcon = ({
   size = 24,
