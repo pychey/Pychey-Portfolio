@@ -57,10 +57,10 @@ export default function Home() {
       </section>
       <section className="flex flex-col gap-4 scroll-mt-6" id="projects">
         <div className="flex justify-between items-center text-muted-foreground tracking-tight">
-          <h1 className="font-bold text-lg">Recent Projects</h1>
+          <h1 className="font-bold text-lg">Favorite Projects</h1>
           <Link href={'/projects'} className="text-sm hover:text-foreground">View More</Link>
         </div>
-        {projectList.map(project => (
+        {projectList.slice(0, 2).map(project => (
           <ProjectCard
             key={project.title}
             coverImage={project.coverImage} 

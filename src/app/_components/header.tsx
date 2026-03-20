@@ -1,28 +1,41 @@
+'use client'
+
 import { ThemeToggleButton } from "@/components/theme-toggle-button";
-import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
 
 const Header = () => {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const scrollTo = (id: string) => {
+    if (pathname === "/") {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      router.push(`/#${id}`);
+    }
+  };
+
   return (
     <header className="flex justify-between">
-      <Link href='/' className="flex items-center font-bold text-2xl">PP</Link>
+      <a href='/' className="flex items-center font-bold text-2xl">PP</a>
       <nav>
-        <ul className="flex justify-between items-center w-[240px]">
+        <ul className="flex justify-between items-center w-[240px] text-muted-foreground">
           <li>
-            <Link href='/#journey' className="text-muted-foreground">journey</Link>
+            <button onClick={() => scrollTo('journey')}>journey</button>
           </li>
           <li>
-            <Link href='/#skills' className="text-muted-foreground">skills</Link>
+            <button onClick={() => scrollTo('skills')}>skills</button>
           </li>
           <li>
-            <Link href='/#projects' className="text-muted-foreground">projects</Link>
+            <button onClick={() => scrollTo('projects')}>projects</button>
           </li>
-          <li>
+          <li className="text-foreground">
             <ThemeToggleButton />
           </li>
         </ul>
       </nav>
     </header>
   );
-}
+};
 
 export default Header;

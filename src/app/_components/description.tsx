@@ -10,12 +10,12 @@ const Description = () => {
     <div className="flex flex-col mt-4">
       <p className="text-sm text-foreground/90">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ullam inventore.</p>
       <div className="mt-4 flex justify-between items-center">
-        <Link href={'#'}>
+        <a href={'/ANSWER.pdf'} target="_blank">
           <Button variant='outline' className="flex gap-2 p-4 cursor-pointer">
-            <span>Resume</span>
+            Resume
             <DownloadIcon />
           </Button>
-        </Link>
+        </a>
         <nav aria-label="Social links">
           <ul className="flex gap-4">
             <li>
