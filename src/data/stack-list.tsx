@@ -14,62 +14,62 @@ import { TechStack } from "@/types/tech-stack";
 
 export const stackList: TechStack[] = [
   {
-    icon: <HtmlIcon />,
+    icon: <HtmlIcon className="size-6 sm:size-7"/>,
     hoverColor: 'group-hover:text-[#e65100] group-active:text-[#e65100]',
     label: 'HTML5',
   },
   {
-    icon: <CssIcon />,
+    icon: <CssIcon className="size-6 sm:size-7"/>,
     hoverColor: 'group-hover:text-[#0277bd] group-active:text-[#0277bd]',
     label: 'CSS',
   },
   {
-    icon: <TypeScriptIcon />,
+    icon: <TypeScriptIcon className="size-6 sm:size-7"/>,
     hoverColor: 'group-hover:text-[#007acc] group-active:text-[#007acc]',
     label: 'TypeScript',
   },
   {
-    icon: <NodejsIcon />,
+    icon: <NodejsIcon className="size-6 sm:size-7"/>,
     hoverColor: 'group-hover:text-[#8bc34a] group-active:text-[#8bc34a]',
     label: 'Node.js',
   },
   {
-    icon: <ReactjsIcon />,
+    icon: <ReactjsIcon className="size-6 sm:size-7"/>,
     hoverColor: 'group-hover:text-[#00d8ff] group-active:text-[#00d8ff]',
     label: 'React.js',
   },
   {
-    icon: <TailwindIcon />,
+    icon: <TailwindIcon className="size-6 sm:size-7"/>,
     hoverColor: 'group-hover:text-[#4db6ac] group-active:text-[#4db6ac]',
     label: 'TailwindCSS',
   },
   {
-    icon: <NextjsIcon />,
+    icon: <NextjsIcon className="size-6 sm:size-7"/>,
     hoverColor: 'group-hover:text-primary group-active:text-primary',
     label: 'Next.js',
   },
   {
-    icon: <NestjsIcon />,
+    icon: <NestjsIcon className="size-6 sm:size-7"/>,
     hoverColor: 'group-hover:text-[#e0234e] group-active:text-[#e0234e]',
     label: 'Nest.js',
   },
   {
-    icon: <FlutterIcon />,
+    icon: <FlutterIcon className="size-6 sm:size-7"/>,
     hoverColor: 'group-hover:text-[#3fb6d3] group-active:text-[#3fb6d3]',
     label: 'Flutter',
   },
   {
-    icon: <PostgresqlIcon />,
+    icon: <PostgresqlIcon className="size-6 sm:size-7"/>,
     hoverColor: 'group-hover:text-[#336791] group-active:text-[#336791]',
     label: 'PostgresSQL',
   },
   {
-    icon: <PrismaIcon />,
+    icon: <PrismaIcon className="size-6 sm:size-7"/>,
     hoverColor: 'group-hover:text-[#00bfa5] group-active:text-[#00bfa5]',
     label: 'PrismaORM',
   },
   {
-    icon: <SocketIcon />,
+    icon: <SocketIcon className="size-6 sm:size-7"/>,
     hoverColor: 'group-hover:text-primary group-active:text-primary',
     label: 'Socket.io',
   },

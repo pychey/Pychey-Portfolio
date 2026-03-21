@@ -23,25 +23,25 @@ export const projectList: ProjectProps[] = [
     title: 'Multiplayer Catte Game',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi quisquam id distinctio libero.',
     stacks: [
-      { icon: <ReactjsIcon size={16}/> },
-      { icon: <ExpressIcon size={16}/> },
-      { icon: <SocketIcon size={16}/> },
-      { icon: <SequelizeIcon size={16}/> },
-      { icon: <MysqlIcon size={16}/> },
+      { icon: <ReactjsIcon className="size-4 sm:size-5"/> },
+      { icon: <ExpressIcon className="size-4 sm:size-5"/> },
+      { icon: <SocketIcon className="size-4 sm:size-5"/> },
+      { icon: <SequelizeIcon className="size-4 sm:size-5"/> },
+      { icon: <MysqlIcon className="size-4 sm:size-5"/> },
     ],
     githubLink: 'https://github.com/pychey/Catte-Card-Game',
-    websiteLink: ''
+    websiteLink: 'a'
   },
   {
     coverImage: 'https://lh3.googleusercontent.com/a/ACg8ocKCdhQw9aJSVPcXBzvsMGWwsohyqNqz08mlD5Igkjy633s3Sgdz=s576-c-no',
     title: 'Online Learning Platform',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi quisquam id distinctio libero.',
     stacks: [
-      { icon: <NextjsIcon size={16}/> },
-      { icon: <TailwindIcon size={16}/> },
-      { icon: <PrismaIcon size={16}/> },
-      { icon: <MysqlIcon size={16}/> },
-      { icon: <PaymentIcon size={16}/> },
+      { icon: <NextjsIcon className="size-4 sm:size-5"/> },
+      { icon: <TailwindIcon className="size-4 sm:size-5"/> },
+      { icon: <PrismaIcon className="size-4 sm:size-5"/> },
+      { icon: <MysqlIcon className="size-4 sm:size-5"/> },
+      { icon: <PaymentIcon className="size-4 sm:size-5"/> },
     ],
     githubLink: 'https://github.com/pychey/Online-Learning-Platform',
     websiteLink: ''
@@ -51,11 +51,11 @@ export const projectList: ProjectProps[] = [
     title: 'Product Review App',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi quisquam id distinctio libero.',
     stacks: [
-      { icon: <FlutterIcon size={16}/> },
-      { icon: <NestjsIcon size={16}/> },
-      { icon: <PrismaIcon size={16}/> },
-      { icon: <PostgresqlIcon size={16}/> },
-      { icon: <SwaggerIcon size={16}/> },
+      { icon: <FlutterIcon className="size-4 sm:size-5"/> },
+      { icon: <NestjsIcon className="size-4 sm:size-5"/> },
+      { icon: <PrismaIcon className="size-4 sm:size-5"/> },
+      { icon: <PostgresqlIcon className="size-4 sm:size-5"/> },
+      { icon: <SwaggerIcon className="size-4 sm:size-5"/> },
     ],
     githubLink: 'https://github.com/pychey/Tos-Review-App',
     websiteLink: ''
@@ -65,10 +65,10 @@ export const projectList: ProjectProps[] = [
     title: 'Sudoku Multiplayer Game',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi quisquam id distinctio libero.',
     stacks: [
-      { icon: <FlutterIcon size={16}/> },
-      { icon: <NodejsIcon size={16}/> },
-      { icon: <ExpressIcon size={16}/> },
-      { icon: <SocketIcon size={16}/> },
+      { icon: <FlutterIcon className="size-4 sm:size-5"/> },
+      { icon: <NodejsIcon className="size-4 sm:size-5"/> },
+      { icon: <ExpressIcon className="size-4 sm:size-5"/> },
+      { icon: <SocketIcon className="size-4 sm:size-5"/> },
     ],
     githubLink: 'https://github.com/pychey/Sudoku-The-Best',
     websiteLink: ''
@@ -78,8 +78,8 @@ export const projectList: ProjectProps[] = [
     title: 'Java Pacman Game',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi quisquam id distinctio libero.',
     stacks: [
-      { icon: <JavaIcon size={16}/> },
-      { icon: <MysqlIcon size={16}/> },
+      { icon: <JavaIcon className="size-4 sm:size-5"/> },
+      { icon: <MysqlIcon className="size-4 sm:size-5"/> },
     ],
     githubLink: 'https://github.com/pychey/Project-Pacman',
     websiteLink: ''
@@ -89,11 +89,11 @@ export const projectList: ProjectProps[] = [
     title: 'Database User Permission System',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi quisquam id distinctio libero.',
     stacks: [
-      { icon: <HtmlIcon size={16}/> },
-      { icon: <CssIcon size={16}/> },
-      { icon: <NodejsIcon size={16}/> },
-      { icon: <ExpressIcon size={16}/> },
-      { icon: <MysqlIcon size={16}/> },
+      { icon: <HtmlIcon className="size-4 sm:size-5"/> },
+      { icon: <CssIcon className="size-4 sm:size-5"/> },
+      { icon: <NodejsIcon className="size-4 sm:size-5"/> },
+      { icon: <ExpressIcon className="size-4 sm:size-5"/> },
+      { icon: <MysqlIcon className="size-4 sm:size-5"/> },
     ],
     githubLink: 'https://github.com/pychey/DCL-User-Permission-System',
     websiteLink: ''

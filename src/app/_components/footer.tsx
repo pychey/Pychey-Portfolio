@@ -9,17 +9,17 @@ const Footer = () => {
         <ul className="flex gap-2">
           <li>
             <Link href="https://github.com/pychey">
-              <GithubIcon className="text-muted-foreground"/>
+              <GithubIcon className="text-muted-foreground size-6 sm:size-7"/>
             </Link>
           </li>
           <li>
             <Link href="https://t.me/pycheyy">
-              <TelegramIcon className="text-muted-foreground"/>
+              <TelegramIcon className="text-muted-foreground size-6 sm:size-7"/>
             </Link>
           </li>
         </ul>
       </nav>
-      <p className="text-sm text-muted-foreground">last updated: 17/03/2026</p>
+      <p className="text-sm sm:text-base text-muted-foreground">last updated: 17/03/2026</p>
     </footer>
   );
 }

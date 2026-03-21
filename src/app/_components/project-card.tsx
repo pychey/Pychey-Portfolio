@@ -11,7 +11,7 @@ const ProjectCard = ({coverImage, title, description, stacks, showLinks = true, 
     <div className="flex flex-col gap-4">
       <div className="p-4 border rounded-2xl flex flex-col gap-4">
         <Image className="w-full h-[200px] object-cover rounded-lg border" src={coverImage} alt='image of pychey' width='1920' height='1080'/>
-        <h2 className="font-semibold">{title}</h2>
+        <h2 className="text-base sm:text-lg font-semibold">{title}</h2>
         <p className="text-sm text-foreground/90">{description}</p>
         <div className="grid grid-cols-6 gap-4">
           {stacks.map((stack, index) => (
@@ -29,14 +29,14 @@ const ProjectCard = ({coverImage, title, description, stacks, showLinks = true, 
       {showLinks && (
         <div className="flex gap-2">
           {githubLink && (
-            <Button variant={'outline'} className="w-[100px] h-[40px] flex gap-2">
-              <GithubIcon className="size-5"/>
+            <Button variant={'outline'} className="p-4 sm:p-5 w-[100px] sm:w-[110px] h-[40px] flex gap-2">
+              <GithubIcon className="size-5 sm:size-6"/>
               Source
             </Button>
           )}
           {websiteLink && (
-            <Button className="w-[90px] h-[40px] flex gap-2">
-              <WebIcon />
+            <Button className="p-4 sm:p-5 w-[90px] sm:w-[100px] h-[40px] flex gap-2">
+              <WebIcon className="size-4 sm:size-5"/>
               Visit
             </Button>
           )}

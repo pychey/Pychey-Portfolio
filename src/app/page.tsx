@@ -14,32 +14,33 @@ import { stackList } from "@/data/stack-list";
 import { Github, Linkedin, Send } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import PycheyImage from '../../public/images/pychey.jpg'
 
 export default function Home() {
   return (
     <main className="mt-12 flex flex-col gap-12">
       <section className="flex flex-col">
-        <div className="relative w-full h-[200px]">
-          <Image className="object-cover object-center rounded-t-xl" src='https://lh3.googleusercontent.com/a/ACg8ocKCdhQw9aJSVPcXBzvsMGWwsohyqNqz08mlD5Igkjy633s3Sgdz=s576-c-no' alt='image' fill/>
+        <div className="relative w-full h-[200px] rounded-t-xl overflow-hidden">
+          <Image priority fill className="object-cover object-center" src={PycheyImage} alt='cover photo'/>
           <div className="absolute inset-x-0 bottom-0 h-8 bg-linear-to-t from-background"/>
         </div>
-        <div className="mt-2 flex gap-6">
-          <Image className="rounded-full object-cover w-16 h-16 p-0.5 ring-2 ring-border" src='https://lh3.googleusercontent.com/a/ACg8ocKCdhQw9aJSVPcXBzvsMGWwsohyqNqz08mlD5Igkjy633s3Sgdz=s576-c-no' alt='image of pychey' width='50' height='50'/>
-          <div className="mt-1">
-            <h1 className="font-bold text-xl">Hey, I'm Pychey</h1>
-            <h2 className="text-md mt-1 text-muted-foreground">Software Developer</h2>
+        <div className="mt-2 flex items-center gap-6">
+          <Image priority className="rounded-full object-cover w-16 h-16 p-0.5 ring-2 ring-border" src={PycheyImage} alt='pychey profile image'/>
+          <div className="mt-2">
+            <h1 className="font-bold text-2xl tracking-tight">Hey, I'm Pychey</h1>
+            <h2 className="text-muted-foreground -mt-0.5">Software Developer</h2>
           </div>
         </div>
         <Description />
       </section>
       <section className="flex flex-col gap-4 scroll-mt-6" id="journey">
-        <h1 className="font-bold text-lg text-muted-foreground tracking-tight">Education</h1>
+        <h1 className="font-bold text-lg sm:text-xl text-muted-foreground tracking-tight">Education</h1>
         <div className="p-4 border rounded-2xl flex flex-col gap-8">
           <JourneyItem />
         </div>
       </section>
       <section className="flex flex-col gap-4 scroll-mt-6" id="skills">
-        <h1 className="font-bold text-lg text-muted-foreground tracking-tight">Tech Stack</h1>
+        <h1 className="font-bold text-lg sm:text-xl text-muted-foreground tracking-tight">Tech Stack</h1>
         <div className="grid grid-cols-4 gap-4">
           {stackList.map(stack => (
             <TechItem 
@@ -50,26 +51,28 @@ export default function Home() {
                 label: stack.label
               }}
               width={'w-full'} 
-              height={'h-[50px] sm:h-[75px]'}
+              height={'h-[50px] sm:h-[80px]'}
             />
           ))}
         </div>
       </section>
       <section className="flex flex-col gap-4 scroll-mt-6" id="projects">
         <div className="flex justify-between items-center text-muted-foreground tracking-tight">
-          <h1 className="font-bold text-lg">Favorite Projects</h1>
-          <Link href={'/projects'} className="text-sm hover:text-foreground">View More</Link>
+          <h1 className="font-bold text-lg sm:text-xl">Favorite Projects</h1>
+          <Link href={'/projects'} className="text-sm sm:text-base hover:text-foreground">View More</Link>
         </div>
-        {projectList.slice(0, 2).map(project => (
-          <ProjectCard
-            key={project.title}
-            coverImage={project.coverImage} 
-            title={project.title} 
-            description={project.description} 
-            stacks={project.stacks} 
-            showLinks={false}
-          />
-        ))}
+        <div className="grid grid-cols-1 gap-4">
+          {projectList.slice(0, 2).map(project => (
+            <ProjectCard
+              key={project.title}
+              coverImage={project.coverImage} 
+              title={project.title} 
+              description={project.description} 
+              stacks={project.stacks} 
+              showLinks={false}
+            />
+          ))}
+        </div>
       </section>
     </main>
   );
