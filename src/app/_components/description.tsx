@@ -19,19 +19,19 @@ const Description = () => {
         <nav aria-label="Social links">
           <ul className="flex gap-4">
             <li>
-              <Link href="https://github.com/pychey">
+              <a href={'https://github.com/pychey'} target="_blank" rel="noopener noreferrer">
                 <GithubIcon className="size-9 sm:size-10"/>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="https://linkedin.com/in/pycheyy">
+              <a href={'https://linkedin.com/in/prak-pychey-61474b2b0'} target="_blank" rel="noopener noreferrer">
                 <LinkedinIcon className="size-9 sm:size-10"/>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="https://t.me/pycheyy">
+              <a href={'https://t.me/pycheyy'} target="_blank" rel="noopener noreferrer">
                 <TelegramIcon className="size-9 sm:size-10"/>
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>

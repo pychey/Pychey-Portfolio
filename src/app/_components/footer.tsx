@@ -8,14 +8,14 @@ const Footer = () => {
       <nav aria-label="Social links">
         <ul className="flex gap-2">
           <li>
-            <Link href="https://github.com/pychey">
+            <a href={'https://github.com/pychey'} target="_blank" rel="noopener noreferrer">
               <GithubIcon className="text-muted-foreground size-6 sm:size-7"/>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link href="https://t.me/pycheyy">
+            <a href={'https://t.me/pycheyy'} target="_blank" rel="noopener noreferrer">
               <TelegramIcon className="text-muted-foreground size-6 sm:size-7"/>
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>

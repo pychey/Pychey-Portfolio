@@ -3,6 +3,7 @@ import ExpressIcon from "@/components/icons/express";
 import FlutterIcon from "@/components/icons/flutter";
 import HtmlIcon from "@/components/icons/html";
 import JavaIcon from "@/components/icons/java";
+import JavascriptIcon from "@/components/icons/javascript";
 import MysqlIcon from "@/components/icons/mysql";
 import NestjsIcon from "@/components/icons/nestjs";
 import NextjsIcon from "@/components/icons/nextjs";
@@ -15,6 +16,7 @@ import SequelizeIcon from "@/components/icons/sequelize";
 import SocketIcon from "@/components/icons/socketio";
 import SwaggerIcon from "@/components/icons/swagger";
 import TailwindIcon from "@/components/icons/tailwindcss";
+import TypeScriptIcon from "@/components/icons/typescript";
 import { ProjectProps } from "@/types/project-prop";
 
 export const projectList: ProjectProps[] = [
@@ -30,7 +32,7 @@ export const projectList: ProjectProps[] = [
       { icon: <MysqlIcon className="size-4 sm:size-5"/> },
     ],
     githubLink: 'https://github.com/pychey/Catte-Card-Game',
-    websiteLink: 'a'
+    websiteLink: ''
   },
   {
     coverImage: 'https://lh3.googleusercontent.com/a/ACg8ocKCdhQw9aJSVPcXBzvsMGWwsohyqNqz08mlD5Igkjy633s3Sgdz=s576-c-no',
@@ -55,7 +57,7 @@ export const projectList: ProjectProps[] = [
       { icon: <NestjsIcon className="size-4 sm:size-5"/> },
       { icon: <PrismaIcon className="size-4 sm:size-5"/> },
       { icon: <PostgresqlIcon className="size-4 sm:size-5"/> },
-      { icon: <SwaggerIcon className="size-4 sm:size-5"/> },
+      { icon: <TypeScriptIcon className="size-4 sm:size-5"/> },
     ],
     githubLink: 'https://github.com/pychey/Tos-Review-App',
     websiteLink: ''
@@ -71,6 +73,19 @@ export const projectList: ProjectProps[] = [
       { icon: <SocketIcon className="size-4 sm:size-5"/> },
     ],
     githubLink: 'https://github.com/pychey/Sudoku-The-Best',
+    websiteLink: ''
+  },
+  {
+    coverImage: 'https://lh3.googleusercontent.com/a/ACg8ocKCdhQw9aJSVPcXBzvsMGWwsohyqNqz08mlD5Igkjy633s3Sgdz=s576-c-no',
+    title: 'Clockodoro Project',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi quisquam id distinctio libero.',
+    stacks: [
+      { icon: <ReactjsIcon className="size-4 sm:size-5"/> },
+      { icon: <HtmlIcon className="size-4 sm:size-5"/> },
+      { icon: <CssIcon className="size-4 sm:size-5"/> },
+      { icon: <JavascriptIcon className="size-4 sm:size-5"/> },
+    ],
+    githubLink: 'https://github.com/HunDavin/Clockodoro',
     websiteLink: ''
   },
   {

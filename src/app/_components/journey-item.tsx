@@ -1,5 +1,5 @@
+import { CadtImage } from "@/lib/assets";
 import Image from "next/image";
-import CadtImage from '../../../public/images/cadt.jpg'
 
 const JourneyItem = () => {
   return (

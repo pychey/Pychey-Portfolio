@@ -11,10 +11,10 @@ import { ThemeToggleButton } from "@/components/theme-toggle-button";
 import { Button } from "@/components/ui/button";
 import { projectList } from "@/data/project-list";
 import { stackList } from "@/data/stack-list";
+import { PycheyImage } from "@/lib/assets";
 import { Github, Linkedin, Send } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import PycheyImage from '../../public/images/pychey.jpg'
 
 export default function Home() {
   return (

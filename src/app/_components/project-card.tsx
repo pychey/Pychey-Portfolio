@@ -29,16 +29,20 @@ const ProjectCard = ({coverImage, title, description, stacks, showLinks = true, 
       {showLinks && (
         <div className="flex gap-2">
           {githubLink && (
-            <Button variant={'outline'} className="p-4 sm:p-5 w-[100px] sm:w-[110px] h-[40px] flex gap-2">
-              <GithubIcon className="size-5 sm:size-6"/>
-              Source
-            </Button>
+            <a href={githubLink} target="_blank" rel="noopener noreferrer">
+              <Button variant={'outline'} className="p-4 sm:p-5 w-[100px] sm:w-[110px] h-[40px] flex gap-2">
+                <GithubIcon className="size-5 sm:size-6"/>
+                Source
+              </Button>
+            </a>
           )}
           {websiteLink && (
-            <Button className="p-4 sm:p-5 w-[90px] sm:w-[100px] h-[40px] flex gap-2">
-              <WebIcon className="size-4 sm:size-5"/>
-              Visit
-            </Button>
+            <a href={websiteLink} target="_blank" rel="noopener noreferrer">
+              <Button className="p-4 sm:p-5 w-[90px] sm:w-[100px] h-[40px] flex gap-2">
+                <WebIcon className="size-4 sm:size-5"/>
+                Visit
+              </Button>
+            </a>
           )}
         </div>
       )}
