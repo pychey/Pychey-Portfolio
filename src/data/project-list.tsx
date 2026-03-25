@@ -18,12 +18,13 @@ import SwaggerIcon from "@/components/icons/swagger";
 import TailwindIcon from "@/components/icons/tailwindcss";
 import TypeScriptIcon from "@/components/icons/typescript";
 import { ProjectProps } from "@/types/project-prop";
+import { CatteImage, ClockodoroImage, DclImage, PacmanImage, SastraImage, SudokuImage, TosReviewImage } from "@/lib/assets";
 
 export const projectList: ProjectProps[] = [
   {
-    coverImage: 'https://lh3.googleusercontent.com/a/ACg8ocKCdhQw9aJSVPcXBzvsMGWwsohyqNqz08mlD5Igkjy633s3Sgdz=s576-c-no',
+    coverImage: CatteImage,
     title: 'Multiplayer Catte Game',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi quisquam id distinctio libero.',
+    description: 'Inspired by a card game I often play, where it gets more fun with more players.',
     stacks: [
       { icon: <ReactjsIcon className="size-4 sm:size-5"/> },
       { icon: <ExpressIcon className="size-4 sm:size-5"/> },
@@ -32,12 +33,12 @@ export const projectList: ProjectProps[] = [
       { icon: <MysqlIcon className="size-4 sm:size-5"/> },
     ],
     githubLink: 'https://github.com/pychey/Catte-Card-Game',
-    websiteLink: ''
+    websiteLink: 'https://catte-card-game.vercel.app/'
   },
   {
-    coverImage: 'https://lh3.googleusercontent.com/a/ACg8ocKCdhQw9aJSVPcXBzvsMGWwsohyqNqz08mlD5Igkjy633s3Sgdz=s576-c-no',
+    coverImage: SastraImage,
     title: 'Online Learning Platform',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi quisquam id distinctio libero.',
+    description: 'Users can explore, buy, and complete courses to earn certificates.',
     stacks: [
       { icon: <NextjsIcon className="size-4 sm:size-5"/> },
       { icon: <TailwindIcon className="size-4 sm:size-5"/> },
@@ -46,12 +47,12 @@ export const projectList: ProjectProps[] = [
       { icon: <PaymentIcon className="size-4 sm:size-5"/> },
     ],
     githubLink: 'https://github.com/pychey/Online-Learning-Platform',
-    websiteLink: ''
+    websiteLink: 'https://sastra-online-learning-platform.vercel.app/'
   },
   {
-    coverImage: 'https://lh3.googleusercontent.com/a/ACg8ocKCdhQw9aJSVPcXBzvsMGWwsohyqNqz08mlD5Igkjy633s3Sgdz=s576-c-no',
+    coverImage: TosReviewImage,
     title: 'Product Review App',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi quisquam id distinctio libero.',
+    description: 'Social platform where users express genuine opinions on products they’ve used.',
     stacks: [
       { icon: <FlutterIcon className="size-4 sm:size-5"/> },
       { icon: <NestjsIcon className="size-4 sm:size-5"/> },
@@ -60,12 +61,12 @@ export const projectList: ProjectProps[] = [
       { icon: <TypeScriptIcon className="size-4 sm:size-5"/> },
     ],
     githubLink: 'https://github.com/pychey/Tos-Review-App',
-    websiteLink: ''
+    websiteLink: undefined
   },
   {
-    coverImage: 'https://lh3.googleusercontent.com/a/ACg8ocKCdhQw9aJSVPcXBzvsMGWwsohyqNqz08mlD5Igkjy633s3Sgdz=s576-c-no',
+    coverImage: SudokuImage,
     title: 'Sudoku Multiplayer Game',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi quisquam id distinctio libero.',
+    description: 'Solving against each others in realtime, fun to play with friends or strangers.',
     stacks: [
       { icon: <FlutterIcon className="size-4 sm:size-5"/> },
       { icon: <NodejsIcon className="size-4 sm:size-5"/> },
@@ -73,36 +74,25 @@ export const projectList: ProjectProps[] = [
       { icon: <SocketIcon className="size-4 sm:size-5"/> },
     ],
     githubLink: 'https://github.com/pychey/Sudoku-The-Best',
-    websiteLink: ''
+    websiteLink: undefined
   },
   {
-    coverImage: 'https://lh3.googleusercontent.com/a/ACg8ocKCdhQw9aJSVPcXBzvsMGWwsohyqNqz08mlD5Igkjy633s3Sgdz=s576-c-no',
+    coverImage: ClockodoroImage,
     title: 'Clockodoro Project',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi quisquam id distinctio libero.',
+    description: 'Pomodoro relaxing timer with built-in task management to increase productivity.',
     stacks: [
       { icon: <ReactjsIcon className="size-4 sm:size-5"/> },
       { icon: <HtmlIcon className="size-4 sm:size-5"/> },
       { icon: <CssIcon className="size-4 sm:size-5"/> },
       { icon: <JavascriptIcon className="size-4 sm:size-5"/> },
     ],
-    githubLink: 'https://github.com/HunDavin/Clockodoro',
-    websiteLink: ''
+    githubLink: 'https://github.com/pychey/Clockodoro',
+    websiteLink: 'https://clockodoro.vercel.app/'
   },
   {
-    coverImage: 'https://lh3.googleusercontent.com/a/ACg8ocKCdhQw9aJSVPcXBzvsMGWwsohyqNqz08mlD5Igkjy633s3Sgdz=s576-c-no',
-    title: 'Java Pacman Game',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi quisquam id distinctio libero.',
-    stacks: [
-      { icon: <JavaIcon className="size-4 sm:size-5"/> },
-      { icon: <MysqlIcon className="size-4 sm:size-5"/> },
-    ],
-    githubLink: 'https://github.com/pychey/Project-Pacman',
-    websiteLink: ''
-  },
-  {
-    coverImage: 'https://lh3.googleusercontent.com/a/ACg8ocKCdhQw9aJSVPcXBzvsMGWwsohyqNqz08mlD5Igkjy633s3Sgdz=s576-c-no',
+    coverImage: DclImage,
     title: 'Database User Permission System',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi quisquam id distinctio libero.',
+    description: 'Managing users, roles, and testing their database operation permissions.',
     stacks: [
       { icon: <HtmlIcon className="size-4 sm:size-5"/> },
       { icon: <CssIcon className="size-4 sm:size-5"/> },
@@ -111,6 +101,17 @@ export const projectList: ProjectProps[] = [
       { icon: <MysqlIcon className="size-4 sm:size-5"/> },
     ],
     githubLink: 'https://github.com/pychey/DCL-User-Permission-System',
-    websiteLink: ''
+    websiteLink: undefined
+  },
+  {
+    coverImage: PacmanImage,
+    title: 'Java Pacman Game',
+    description: 'Control Pacman, dodge ghosts, and collect all points to win.',
+    stacks: [
+      { icon: <JavaIcon className="size-4 sm:size-5"/> },
+      { icon: <MysqlIcon className="size-4 sm:size-5"/> },
+    ],
+    githubLink: 'https://github.com/pychey/Project-Pacman',
+    websiteLink: undefined
   },
 ]

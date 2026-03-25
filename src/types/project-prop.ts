@@ -1,7 +1,8 @@
+import { StaticImageData } from "next/image";
 import { TechStack } from "./tech-stack";
 
 export type ProjectProps = {
-  coverImage: string;
+  coverImage: StaticImageData;
   title: string;
   description: string;
   stacks: TechStack[];

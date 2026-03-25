@@ -10,7 +10,12 @@ const ProjectCard = ({coverImage, title, description, stacks, showLinks = true, 
   return (
     <div className="flex flex-col gap-4">
       <div className="p-4 border rounded-2xl flex flex-col gap-4">
-        <Image className="w-full h-[200px] object-cover rounded-lg border" src={coverImage} alt='image of pychey' width='1920' height='1080'/>
+        <a href={websiteLink} target="_blank" rel="noopener noreferrer">
+          <div className="relative w-full h-[200px] xs:h-[240px] rounded-lg border overflow-hidden">
+            <Image className="object-cover blur-xs opacity-50" fill src={coverImage} alt=''/>
+            <Image className="p-4 object-contain" fill src={coverImage} alt={`image of ${title}`}/>
+          </div>
+        </a>
         <h2 className="text-base sm:text-lg font-semibold">{title}</h2>
         <p className="text-sm text-foreground/90">{description}</p>
         <div className="grid grid-cols-6 gap-4">

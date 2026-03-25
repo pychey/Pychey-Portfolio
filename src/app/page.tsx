@@ -21,7 +21,7 @@ export default function Home() {
     <main className="mt-12 flex flex-col gap-12">
       <section className="flex flex-col">
         <div className="relative w-full h-[200px] rounded-t-xl overflow-hidden">
-          <Image priority fill className="object-cover object-center" src={PycheyImage} alt='cover photo'/>
+          <Image priority fill className="object-cover object-center scale-120 xs:scale-100" src={PycheyImage} alt='cover photo'/>
           <div className="absolute inset-x-0 bottom-0 h-8 bg-linear-to-t from-background"/>
         </div>
         <div className="mt-2 flex items-center gap-6">
@@ -70,6 +70,7 @@ export default function Home() {
               description={project.description} 
               stacks={project.stacks} 
               showLinks={false}
+              websiteLink={project.websiteLink}
             />
           ))}
         </div>
