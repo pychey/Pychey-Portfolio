@@ -2,17 +2,9 @@ import Description from "@/app/_components/description";
 import JourneyItem from "@/app/_components/journey-item";
 import ProjectCard from "@/app/_components/project-card";
 import TechItem from "@/app/_components/tech-item";
-import DownloadIcon from "@/components/icons/download";
-import GithubIcon from "@/components/icons/github";
-import LinkedinIcon from "@/components/icons/linkedin";
-import NextjsIcon from "@/components/icons/nextjs";
-import TelegramIcon from "@/components/icons/telegram";
-import { ThemeToggleButton } from "@/components/theme-toggle-button";
-import { Button } from "@/components/ui/button";
 import { projectList } from "@/data/project-list";
 import { stackList } from "@/data/stack-list";
-import { PycheyImage } from "@/lib/assets";
-import { Github, Linkedin, Send } from "lucide-react";
+import { PycheyCoverImage, PycheyImage } from "@/lib/assets";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,7 +13,7 @@ export default function Home() {
     <main className="mt-12 flex flex-col gap-12">
       <section className="flex flex-col">
         <div className="relative w-full h-[200px] rounded-t-xl overflow-hidden">
-          <Image priority fill className="object-cover object-center scale-120 xs:scale-100" src={PycheyImage} alt='cover photo'/>
+          <Image priority fill className="object-cover object-center scale-120 xs:scale-100" src={PycheyCoverImage} alt='cover photo'/>
           <div className="absolute inset-x-0 bottom-0 h-8 bg-linear-to-t from-background"/>
         </div>
         <div className="mt-2 flex items-center gap-6">

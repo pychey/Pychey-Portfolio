@@ -1,6 +1,5 @@
 import Image from "next/image";
 import TechItem from "./tech-item";
-import NextjsIcon from "@/components/icons/nextjs";
 import { Button } from "@/components/ui/button";
 import GithubIcon from "@/components/icons/github";
 import WebIcon from "@/components/icons/web";

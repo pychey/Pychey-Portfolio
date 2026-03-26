@@ -1,6 +1,5 @@
 import GithubIcon from "@/components/icons/github";
 import TelegramIcon from "@/components/icons/telegram";
-import Link from "next/link";
 
 const Footer = () => {
   return (

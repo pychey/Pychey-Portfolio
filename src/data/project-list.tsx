@@ -38,7 +38,7 @@ export const projectList: ProjectProps[] = [
   {
     coverImage: SastraImage,
     title: 'Online Learning Platform',
-    description: 'Users can explore, buy, and complete courses to earn certificates.',
+    description: 'Users can explore, buy, and complete courses with quiz to earn certificates.',
     stacks: [
       { icon: <NextjsIcon className="size-4 sm:size-5"/> },
       { icon: <TailwindIcon className="size-4 sm:size-5"/> },
