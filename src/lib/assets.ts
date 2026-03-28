@@ -1,4 +1,4 @@
-import PycheyCoverImage from '../../public/images/pychey_cover.jpg';
+import PycheyCoverImage from '../../public/images/pychey_cover.webp';
 import CadtImage from '../../public/images/cadt.jpg';
 import CatteImage from '../../public/images/catte.png';
 import SastraImage from '../../public/images/sastra.png';
